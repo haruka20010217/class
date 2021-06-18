@@ -1,0 +1,586 @@
+*,
+body {
+  margin: 0;
+  width: auto;
+}
+
+body {
+  font-family: "Hannari";
+}
+
+/*******************
+PC style
+*******************/
+.pad-image,
+.sp-image {
+  display: none;
+}
+
+.sp-menu {
+  display: none;
+}
+
+/*
+header
+*/
+
+.top-link {
+    padding: 0 10px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 50%,
+      rgb(252, 204, 49) 50%
+    );
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    font-size:30px;
+  }
+  
+  .top-link:hover {
+    background-position: -100% 0;
+    color: #fff;
+  }
+
+head {
+  width: auto;
+}
+
+.fv {
+  position: relative;
+}
+
+.pc-image,
+.pad-image,
+.sp-image {
+  position: relative;
+  z-index: -1;
+}
+
+.pc-image p,
+.pad-image p,
+.sp-image p {
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 40px;
+  font-family: Monotype Corsiva;
+}
+
+.pc-image img,
+.pad-image img,
+.sp-image img {
+  width: 100%;
+}
+
+.top-menu {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  font-family:Monotype Corsiva ;
+  font-size:20px;
+  color:white;
+}
+
+.top-nav {
+  width: 100%;
+}
+
+.top-nav .top-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.top-nav .top-ul {
+  list-style: none;
+}
+
+/*
+container
+*/
+.theme-phase {
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.content-title {
+  padding: 0 6rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.space {
+  margin: 3rem;
+}
+
+.container .index-image {
+  margin-top: 6.5rem;
+}
+
+.up-image .pc-image{
+    width: 483px;
+    height: 617;
+}
+
+.up-image .pad-image{
+    width: 220px;
+    height: 317;
+}
+
+.up-image .sp-image{
+    width: 100px;
+    height: 317;
+}
+
+.index-image .pc-image{
+    width: 483px;
+    height: 617;
+}
+
+.index-image .pad-image{
+    width: 220px;
+    height: 317;
+}
+
+.index-image .sp-image{
+    width: 100px;
+    height: 317;
+}
+
+/*hr design*/
+hr {
+  width: 80%;
+  margin: 6rem auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: -ms-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.store-image {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  width: 1080px;
+  height: 400px;
+}
+
+.store-image img {
+  width: 100%;
+}
+
+.outgoing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.outgoing a {
+  font-size: 21px;
+  color: #73716d;
+}
+
+/*
+sns
+*/
+.sns {
+  text-align: center;
+}
+
+.sns ul {
+  display: flex;
+  justify-content: center;
+}
+
+.sns ul li {
+  list-style: none;
+  margin: 5.5rem 1.5rem;
+}
+
+/*
+footer
+*/
+footer {
+  text-align: center;
+}
+
+/*******************
+Pad style
+*******************/
+
+/* 
+humger menu 
+*/
+#nav-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #d6af2e;
+  }
+  #nav-content ul {
+    padding: 70px 10px 0;
+  }
+  #nav-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+  }
+  #nav-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+  }
+  #nav-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+  }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  /*
+  header
+  */
+  .pc-image,
+  .sp-image {
+    display: none;
+  }
+  .pad-image {
+    display: block;
+  }
+}
+
+/*******************
+sp style
+*******************/
+@media (max-width: 767px) {
+  /*
+  header
+  */
+  .pc-image,
+  .pad-image {
+    display: none;
+  }
+  .sp-image {
+    display: block;
+  }
+  .pc-menu {
+    display: none;
+  }
+  .sp-menu {
+    display: block;
+    margin: 0 0 0 auto;
+  }
+}
+
+/*
+sp-menu
+*/
+
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display: none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span,
+#nav-open span:before,
+#nav-open span:after {
+  position: absolute;
+  height: 3px; /*線の太さ*/
+  width: 25px; /*長さ*/
+  border-radius: 3px;
+  background: #555;
+  display: block;
+  content: "";
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none; /*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0; /*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; /*最前面に*/
+  width: 90%; /*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px; /*最大幅（調整してください）*/
+  height: 100%;
+  background: #fff; /*背景色*/
+  transition: 0.3s ease-in-out; /*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%); /*左に隠しておく*/
+}
+
+#nav-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #d6af2e;
+}
+#nav-content ul {
+  padding: 70px 10px 0;
+}
+#nav-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+#nav-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+#nav-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block; /*カバーを表示*/
+  opacity: 0.5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%); /*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+/******************
+Form
+******************/
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #5bc8ac;
+  color: #fff;
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #5bc8ac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}

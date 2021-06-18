@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="fv">
+      <div class="top-menu">
+        <!-- <img src="https://placehold.jp/80x108.png" alt=""> -->
+        <h2>Cafe Prima</h2>
+        <nav class="top-nav pc-menu">
+            <ul class="top-ul">
+              <li class="top-li"><a href="Final_Ex.html" class="top-link">Top</a></li>
+              <li class="top-li"><a href="lunch.html" class="top-link">Lunch</a></li>
+              <li class="top-li"><a href="dinner.html" class="top-link">Dinner</a></li>
+              <li class="top-li"><a href="/" class="top-link">Reserve</a></li>
+            </ul>
+          </nav>
+        <div class="sp-menu" id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul>
+                <li>
+                    <a href="Final_Ex.html">Top</a>
+                </li>
+                <li>
+                    <a href="lunch.html">Lunch</a>
+                </li>
+                <li>
+                    <a href="dinner.html">Dinner</a>
+                </li>
+                <li>
+                  <a href="reserve.html">Reserve</a>
+              </li>
+            </ul>              
+          </div>
+        </div>
+      </div>
+      <div class="pc-image">
+        <img src="Top.jpg" alt="">
+        <p>Reserve <br><br>Please enjoy yourselves</p>
+      </div>
+      <div class="pad-image">
+        <img src="Top.jpg" alt="">
+        <p>Reserve</p>
+      </div>
+      <div class="sp-image">
+        <img src="Top.jpg" alt="">
+        <p>Reserve</p>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="Form">
+      <div class="Form-Item">
+        <p class="Form-Item-Label">
+          <span class="Form-Item-Label-Required">必須</span>お名前
+        </p>
+        <input type="text" class="Form-Item-Input" placeholder="例）山田 太郎">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+        <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+        <input type="email" class="Form-Item-Input" placeholder="例）example@eagle.sophia.ac.jp">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+        <textarea class="Form-Item-Textarea"></textarea>
+      </div>
+      <input type="submit" class="Form-Btn" value="送信する">
+    </div>
+  </main>
+  <hr>
+  <footer id="footer">
+    <p>A1978716 All Rights Reserved.</p>
+	</footer>
+</body>
+</html>
